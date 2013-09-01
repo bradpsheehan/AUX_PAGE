@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Roboto:400,300italic,300,400italic,500,500italic|Damion' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function (){
+        $("#skills-button").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#animation-target").offset().top
+            }, 900);
+        });
+      });
+
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 500) {
+          $('#skills1').addClass('transition');
+          $('#skills2').addClass('transition-2');
+          $('#skills3').addClass('transition-3');
+          $('#skills4').addClass('transition-4');
+          $('#skills5').addClass('transition-5');
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="hero">
+      <h4>Greetings! Here are a few reasons why</h4>
+      <h1>BRADLEY SHEEHAN</h1>
+      <h4>is a Bloody Brilliant Choice for AUX</h4>
+      <div class="container">
+        <button id="skills-button">CLICK</button>
+      </div>
+    </div>
+    <div class="row">
+      <h2 id="animation-target" class="passion-header">A Passion for Creating Amazing Experiences</h2>
+      <div id="skills" class="center">
+        <div id="skills-wrapper">
+          <h1>ME</h1>
+        </div>
+        <div id="skills1">
+          <div class="circle"></div>
+          <h5>Design</h5>
+        </div>
+        <div id="skills2">
+          <div class="circle"></div>
+          <h5>Design</h5>
+        </div>
+        <div id="skills3">
+          <div class="circle"></div>
+          <h5>Design</h5>
+        </div>
+        <div id="skills4">
+          <div class="circle"></div>
+          <h5>Design</h5>
+        </div>
+        <div id="skills5">
+          <div class="circle"></div>
+          <h5>Design</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer2">
+    </div>
+
+  </body>
+</html>
