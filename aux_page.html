@@ -11,18 +11,53 @@
                 scrollTop: $("#animation-target").offset().top
             }, 900);
         });
+
+        $('.circle').click(function(){
+          $(this).toggleClass('active')
+        });
+
+        $('#skills-content-left-top').toggle();
+        $('#skills-content-left-bottom').toggle();
+        $('#skills-content-bottom').toggle();
+        $('#skills-content-right-bottom').toggle();
+        $('#skills-content-right-top').toggle();
+
+        $('#skills1').click(function(){
+          $('#skills-content-left-top').toggle();
+        });
+
+        $('#skills2').click(function(){
+          $('#skills-content-left-bottom').toggle();
+        });
+
+        $('#skills3').click(function(){
+          $('#skills-content-bottom').toggle();
+        });
+
+        $('#skills4').click(function(){
+          $('#skills-content-right-bottom').toggle();
+        });
+
+        $('#skills5').click(function(){
+          $('#skills-content-right-top').toggle();
+
+        });
+
+        $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+          if (scroll > 500) {
+            $('#skills1').addClass('transition');
+            $('#skills2').addClass('transition-2');
+            $('#skills3').addClass('transition-3');
+            $('#skills4').addClass('transition-4');
+            $('#skills5').addClass('transition-5');
+          }
+        });
+
+
       });
 
-      $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        if (scroll > 500) {
-          $('#skills1').addClass('transition');
-          $('#skills2').addClass('transition-2');
-          $('#skills3').addClass('transition-3');
-          $('#skills4').addClass('transition-4');
-          $('#skills5').addClass('transition-5');
-        }
-      });
+
     </script>
   </head>
   <body>
@@ -31,34 +66,56 @@
       <h1>BRADLEY SHEEHAN</h1>
       <h4>is a Bloody Brilliant Choice for AUX</h4>
       <div class="container">
-        <button id="skills-button">CLICK</button>
+        <button id="skills-button">discover</button>
       </div>
     </div>
+    <h2 id="animation-target" class="passion-header">A Passion for People and Design</h2>
     <div class="row">
-      <h2 id="animation-target" class="passion-header">A Passion for Creating Amazing Experiences</h2>
       <div id="skills" class="center">
-        <div id="skills-wrapper">
-          <h1>ME</h1>
-        </div>
+        <div id="skills-wrapper"></div>
         <div id="skills1">
-          <div class="circle"></div>
-          <h5>Design</h5>
+          <div class="circle">
+            <div id="circle-title-left">Design</div>
+          </div>
+          <div class="skills-content">
+            <div id="skills-content-left-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          </div>
         </div>
+
         <div id="skills2">
-          <div class="circle"></div>
-          <h5>Design</h5>
+          <div class="circle">
+            <div id="circle-title-left">Design</div>
+          </div>
+          <div class="skills-content">
+            <div id="skills-content-left-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          </div>
         </div>
+
         <div id="skills3">
-          <div class="circle"></div>
-          <h5>Design</h5>
+          <div class="circle">
+            <div id="circle-title-bottom">Design</div>
+          </div>
+          <div class="skills-content">
+            <div id="skills-content-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          </div>
         </div>
+
         <div id="skills4">
-          <div class="circle"></div>
-          <h5>Design</h5>
+          <div id="s-right" class="circle">
+            <div id="circle-title">Design</div>
+          </div>
+          <div class="skills-content">
+            <div id="skills-content-right-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          </div>
         </div>
+
         <div id="skills5">
-          <div class="circle"></div>
-          <h5>Design</h5>
+          <div id="s-right" class="circle">
+            <div id="circle-title">Design</div>
+          </div>
+          <div class="skills-content">
+            <div id="skills-content-right-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          </div>
         </div>
       </div>
     </div>

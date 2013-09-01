@@ -18,6 +18,7 @@ body {
   font-family: 'Damion', cursive;
   font-weight: 400;
   font-size: 1.6em;
+  margin-top: 0;
 }
 
 .center {
@@ -27,12 +28,27 @@ body {
 }
 
 .circle {
-  background-color: black;
+  color: black;
+  background-color: #9ea2a3;
   width:70px;
   height:70px;
   -webkit-border-radius:35px;
   -moz-border-radius:35px;
   border-radius:35px;
+}
+
+.circle:hover {
+  background-color: #da662a;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.active {
+  background-color: #f68043;
 }
 
 #circle-text {
@@ -47,10 +63,10 @@ body {
   height:218px;
   position:absolute;
   z-index:2;
-  background: black;
-  -webkit-border-radius:190px;
+  background: url('../images/LOGO_AUX.png');
+/*  -webkit-border-radius:190px;
   -moz-border-radius:190px;
-  border-radius:190px;
+  border-radius:190px;*/
 }
 
 #skills-wrapper h1 {
@@ -133,6 +149,18 @@ body {
   transform: translate(164px, -120px) !important;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 400px
+
+}
+
+li {
+  display: inline;
+}
+
 .hero {
   width: 100%;
   height: 700px;
@@ -146,7 +174,7 @@ body {
   letter-spacing: -0.02em;
   margin-bottom: -25px;
   text-shadow: 2px 2px 0 #fff,6px 6px 0 #e3e3e3;
-  text-align: center
+  text-align: center;
 }
 .hero h4 {
   color: gray;
@@ -157,7 +185,7 @@ body {
 
 .spacer2 {
   width: 100%;
-  height: 800px;
+  height: 575px;
 }
 
 .container {
@@ -177,13 +205,102 @@ body {
 .passion-header {
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  margin-top: 15%;
 }
 
 #skills-button {
   margin-left: 42%;
   width: 150px;
   height: 50px;
-  background-color: #f6921e;
+  background-color: #da662a;
   border-radius: 10px;
   border: none;
+  color: white;
+  font-family: 'Damion', cursive;
+  font-size: 2em;
+}
+#skills-button:hover {
+  background-color: #f68043;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+#circle-title {
+  margin-left: 2px;
+  margin-top: 100%;
+  font-family: 'Damion', cursive;
+  font-size: 1.6em;
+}
+
+#circle-title-left {
+  float: right;
+  margin-left: 2px;
+  margin-top: 100%;
+  font-family: 'Damion', cursive;
+  font-size: 1.6em;
+}
+
+#circle-title-bottom {
+  margin-left: 2px;
+  padding-top: 70px;
+  font-family: 'Damion', cursive;
+  font-size: 1.6em;
+}
+
+#skills-content-left-top {
+  transform: translate(-425px,-105px)!important;
+  -webkit-transform: translate(-425px, -105px) !important;
+  -moz-transform: translate(-425px, -105px) !important;
+  -o-transform: translate(-425px, -105px) !important;
+  -ms-transform: translate(-425px, -105px) !important;
+  float: left;
+  width: 375px;
+  border: 3px solid #f68043;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+#skills-content-left-bottom {
+  transform: translate(-425px, -100px) !important;
+  -webkit-transform: translate(-425px, -100px) !important;
+  -moz-transform: translate(-425px, -100px) !important;
+  -o-transform: translate(-425px, -100px) !important;
+  -ms-transform: translate(-425px, -100px) !important;
+  float: left;
+  width: 375px;
+  border: 3px solid #f68043;
+  border-radius: 6px;
+  padding: 10px;
+}
+#skills-content-right-top, #skills-content-right-bottom {
+  margin-left: 100px;
+  width: 375px;
+  border: 3px solid #f68043;
+  border-radius: 6px;
+  padding: 10px;
+}
+#skills-content-bottom {
+  transform: translate(-160px, 50px) !important;
+  -webkit-transform: translate(-160px, 50px) !important;
+  -moz-transform: translate(-160px, 50px) !important;
+  -o-transform: translate(-160px, 50px) !important;
+  -ms-transform: translate(-160px, 50px) !important;
+  margin-right: 200px;
+  width: 375px;
+  border: 3px solid #f68043;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+
+/*#s-left {
+  float: right;
+}*/
+#s-right {
+  float: left;
 }
