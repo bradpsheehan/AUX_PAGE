@@ -27,9 +27,9 @@ body {
   bottom:20px;
 }
 
-.circle {
+.circle1 {
   color: black;
-  background-color: #9ea2a3;
+  background: url("../images/bull_horn.png");
   width:70px;
   height:70px;
   -webkit-border-radius:35px;
@@ -37,7 +37,47 @@ body {
   border-radius:35px;
 }
 
-.circle:hover {
+.circle2 {
+  color: black;
+  background: url("../images/leaf.png");
+  width:70px;
+  height:70px;
+  -webkit-border-radius:35px;
+  -moz-border-radius:35px;
+  border-radius:35px;
+}
+
+.circle3 {
+  color: black;
+  background: url("../images/heart.png");
+  width:70px;
+  height:70px;
+  -webkit-border-radius:35px;
+  -moz-border-radius:35px;
+  border-radius:35px;
+}
+
+.circle4 {
+  color: black;
+  background: url("../images/tools.png");
+  width:70px;
+  height:70px;
+  -webkit-border-radius:35px;
+  -moz-border-radius:35px;
+  border-radius:35px;
+}
+
+.circle5 {
+  color: black;
+  background: url("../images/drawing_compass.png");
+  width:70px;
+  height:70px;
+  -webkit-border-radius:35px;
+  -moz-border-radius:35px;
+  border-radius:35px;
+}
+
+.circle1:hover, .circle2:hover, .circle3:hover, .circle4:hover, .circle5:hover {
   background-color: #da662a;
   cursor: pointer;
   -webkit-transition: all 500ms ease;
@@ -72,8 +112,8 @@ body {
 }
 
 #skills-wrapper-place {
-  width:218px;
-  height:218px;
+  width:230px;
+  height:230px;
   position:absolute;
   z-index:3;
   background: url('../images/LOGO_AUX.png');
