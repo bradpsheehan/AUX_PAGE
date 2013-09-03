@@ -59,14 +59,24 @@ body {
 }
 
 #skills-wrapper {
-  width:218px;
-  height:218px;
+  left: 25%;
+  top: 12%;
+  width:120px;
+  height:140px;
   position:absolute;
   z-index:2;
-  background: url('../images/LOGO_AUX.png');
+  background: url('../images/stripes.png');
 /*  -webkit-border-radius:190px;
   -moz-border-radius:190px;
   border-radius:190px;*/
+}
+
+#skills-wrapper-place {
+  width:218px;
+  height:218px;
+  position:absolute;
+  z-index:3;
+  background: url('../images/LOGO_AUX.png');
 }
 
 #skills-wrapper h1 {
@@ -80,6 +90,7 @@ body {
   position:absolute;
   top:50px;
   left:84px;
+  height: 20px;
   z-index:1;
   transition: 2s;
   -webkit-transform: translate3d(0,0,0);
@@ -149,18 +160,6 @@ body {
   transform: translate(164px, -120px) !important;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 400px
-
-}
-
-li {
-  display: inline;
-}
-
 .hero {
   width: 100%;
   height: 700px;
@@ -209,18 +208,35 @@ li {
   margin-top: 15%;
 }
 
-#skills-button {
-  margin-left: 42%;
-  width: 150px;
-  height: 50px;
-  background-color: #da662a;
-  border-radius: 10px;
+.skills-button-fixed {
+  position: fixed;
+  z-index: 4;
+  top: 60%;
+  left: 43%;
+  width: 218px;
+  height: 218px;
   border: none;
+  /*border-radius: 10px;
   color: white;
   font-family: 'Damion', cursive;
-  font-size: 2em;
+  font-size: 2em;*/
 }
-#skills-button:hover {
+
+.skills-button {
+  z-index: 4;
+  top: 21%;
+  left: 43%;
+  width: 218px;
+  height: 218px;
+  background: url("../images/LOGO_AUX.png");
+  border: none;
+  /*border-radius: 10px;
+  color: white;
+  font-family: 'Damion', cursive;
+  font-size: 2em;*/
+}
+
+/*.skills-button:hover {
   background-color: #f68043;
   cursor: pointer;
   -webkit-transition: all 500ms ease;
@@ -228,79 +244,109 @@ li {
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
-}
+}*/
 
-#circle-title {
-  margin-left: 2px;
-  margin-top: 100%;
+#circle-title-right-top {
   font-family: 'Damion', cursive;
   font-size: 1.6em;
 }
 
+#circle-title-right-bottom {
+  transform: translate(-6px, 4px)!important;
+  -webkit-transform: translate(-6px, 4px) !important;
+  -moz-transform: translate(-6px, 4px) !important;
+  -o-transform: translate(-6px, 4px) !important;
+  -ms-transform: translate(-6px, 4px) !important;
+  font-family: 'Damion', cursive;
+  font-size: 1.6em;
+  }
+
 #circle-title-left {
-  float: right;
-  margin-left: 2px;
-  margin-top: 100%;
+  transform: translate(-35px,-0px)!important;
+  -webkit-transform: translate(-35px, 0px) !important;
+  -moz-transform: translate(-35px, -0px) !important;
+  -o-transform: translate(-35px, -0px) !important;
+  -ms-transform: translate(-35px, -0px) !important;
   font-family: 'Damion', cursive;
   font-size: 1.6em;
 }
 
 #circle-title-bottom {
+  transform: translate(-60px,10px)!important;
+  -webkit-transform: translate(-60px, 10px) !important;
+  -moz-transform: translate(-60px, 10px) !important;
+  -o-transform: translate(-60px, 10px) !important;
+  -ms-transform: translate(-60px, 10px) !important;
+  width: 200px;
   margin-left: 2px;
-  padding-top: 70px;
   font-family: 'Damion', cursive;
   font-size: 1.6em;
 }
 
 #skills-content-left-top {
-  transform: translate(-425px,-105px)!important;
-  -webkit-transform: translate(-425px, -105px) !important;
-  -moz-transform: translate(-425px, -105px) !important;
-  -o-transform: translate(-425px, -105px) !important;
-  -ms-transform: translate(-425px, -105px) !important;
+  transform: translate(-480px,-135px)!important;
+  -webkit-transform: translate(-480px, -135px) !important;
+  -moz-transform: translate(-480px, -135px) !important;
+  -o-transform: translate(-480px, -135px) !important;
+  -ms-transform: translate(-480px, -135px) !important;
   float: left;
-  width: 375px;
+  width: 400px;
   border: 3px solid #f68043;
   border-radius: 6px;
   padding: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 #skills-content-left-bottom {
-  transform: translate(-425px, -100px) !important;
-  -webkit-transform: translate(-425px, -100px) !important;
-  -moz-transform: translate(-425px, -100px) !important;
-  -o-transform: translate(-425px, -100px) !important;
-  -ms-transform: translate(-425px, -100px) !important;
+  transform: translate(-420px, -100px) !important;
+  -webkit-transform: translate(-420px, -100px) !important;
+  -moz-transform: translate(-420px, -100px) !important;
+  -o-transform: translate(-420px, -100px) !important;
+  -ms-transform: translate(-420px, -100px) !important;
   float: left;
-  width: 375px;
+  width: 330px;
   border: 3px solid #f68043;
   border-radius: 6px;
   padding: 10px;
+  font-family: 'Roboto', sans-serif;
 }
-#skills-content-right-top, #skills-content-right-bottom {
-  margin-left: 100px;
-  width: 375px;
+
+#skills-content-right-bottom {
+  transform: translate(110px, -100px) !important;
+  -webkit-transform: translate(110px, -100px) !important;
+  -moz-transform: translate(110px, -100px) !important;
+  -o-transform: translate(110px, -100px) !important;
+  -ms-transform: translate(110px, -100px) !important;
+  width: 350px;
   border: 3px solid #f68043;
   border-radius: 6px;
   padding: 10px;
+  font-family: 'Roboto', sans-serif;
 }
+
+#skills-content-right-top {
+  transform: translate(100px, -135px) !important;
+  -webkit-transform: translate(100px, -135px) !important;
+  -moz-transform: translate(100px, -135px) !important;
+  -o-transform: translate(100px, -135px) !important;
+  -ms-transform: translate(100px, -135px) !important;
+  width: 425px;
+  border: 3px solid #f68043;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
 #skills-content-bottom {
-  transform: translate(-160px, 50px) !important;
-  -webkit-transform: translate(-160px, 50px) !important;
-  -moz-transform: translate(-160px, 50px) !important;
-  -o-transform: translate(-160px, 50px) !important;
-  -ms-transform: translate(-160px, 50px) !important;
-  margin-right: 200px;
-  width: 375px;
+  transform: translate(-285px, 30px) !important;
+  -webkit-transform: translate(-285px, 30px) !important;
+  -moz-transform: translate(-285px, 30px) !important;
+  -o-transform: translate(-285px, 30px) !important;
+  -ms-transform: translate(-285px, 30px) !important;
+  width: 600px;
   border: 3px solid #f68043;
   border-radius: 6px;
   padding: 10px;
-}
+  font-family: 'Roboto', sans-serif;
 
-
-/*#s-left {
-  float: right;
-}*/
-#s-right {
-  float: left;
 }

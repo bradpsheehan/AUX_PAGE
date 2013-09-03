@@ -6,15 +6,20 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function (){
-        $("#skills-button").click(function() {
+        $(".skills-button-fixed").click(function() {
             $('html, body').animate({
                 scrollTop: $("#animation-target").offset().top
-            }, 900);
+            }, 700);
         });
 
-        $('.circle').click(function(){
-          $(this).toggleClass('active')
-        });
+
+        // $('.circle').click(function(){
+        //   $(this).toggleClass('active')
+        // });
+
+        // $('.circle').click(function(){
+        //   console.log($(document).find(this));
+        // });
 
         $('#skills-content-left-top').toggle();
         $('#skills-content-left-bottom').toggle();
@@ -22,41 +27,56 @@
         $('#skills-content-right-bottom').toggle();
         $('#skills-content-right-top').toggle();
 
+        // $('#skills-wrapper-place').click(function(){
+        //   $('#skills-content-left-top').toggle();
+        //   $('#skills-content-left-bottom').toggle();
+        //   $('#skills-content-bottom').toggle();
+        //   $('#skills-content-right-bottom').toggle();
+        //   $('#skills-content-right-top').toggle();
+        //   $('.circle').toggleClass('active');
+        // });
+
         $('#skills1').click(function(){
+          $(this).find('.circle').toggleClass('active');
           $('#skills-content-left-top').toggle();
         });
 
         $('#skills2').click(function(){
+          $(this).find('.circle').toggleClass('active');
           $('#skills-content-left-bottom').toggle();
         });
 
         $('#skills3').click(function(){
+          $(this).find('.circle').toggleClass('active');
           $('#skills-content-bottom').toggle();
         });
 
         $('#skills4').click(function(){
+          $(this).find('.circle').toggleClass('active');
           $('#skills-content-right-bottom').toggle();
         });
 
         $('#skills5').click(function(){
+          $(this).find('.circle').toggleClass('active');
           $('#skills-content-right-top').toggle();
 
         });
 
         $(window).scroll(function() {
           var scroll = $(window).scrollTop();
-          if (scroll > 500) {
+          if (scroll > 700) {
+            // $('#skills-wrapper').attr('id', 'skills-wrapper-place');
             $('#skills1').addClass('transition');
             $('#skills2').addClass('transition-2');
             $('#skills3').addClass('transition-3');
             $('#skills4').addClass('transition-4');
             $('#skills5').addClass('transition-5');
+            $('.skills-button-fixed').hide();
           }
         });
 
 
       });
-
 
     </script>
   </head>
@@ -66,56 +86,46 @@
       <h1>BRADLEY SHEEHAN</h1>
       <h4>is a Bloody Brilliant Choice for AUX</h4>
       <div class="container">
-        <button id="skills-button">discover</button>
+        <img class="skills-button-fixed" src="images/LOGO_AUX.png">
       </div>
     </div>
-    <h2 id="animation-target" class="passion-header">A Passion for People and Design</h2>
+    <h2 id="animation-target" class="passion-header">A Passion for People and Building Outcomes</h2>
     <div class="row">
       <div id="skills" class="center">
+        <div id="skills-wrapper-place"></div>
         <div id="skills-wrapper"></div>
         <div id="skills1">
           <div class="circle">
-            <div id="circle-title-left">Design</div>
           </div>
-          <div class="skills-content">
-            <div id="skills-content-left-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-          </div>
+          <div id="circle-title-left">Communication</div>
+          <div id="skills-content-left-top">I thrive in relationships and a work environments where <strong>
+            structured communication</strong> is built into the routine (e.g. daily stand ups, weekly retrospectives, etc).  My abilities as a <strong>listener, writer, and verbal communicator</strong> serve to cultivate effective group dynamics that enable these environments.  Also, I am an avid <strong>drummer</strong> with a sense of rhythm can both get people moving' on the dance floor and carry over into the workplace as a an ability to establish <strong>tempo</strong> and <strong>unity</strong> among coworkers and clients.</div>
         </div>
 
         <div id="skills2">
           <div class="circle">
-            <div id="circle-title-left">Design</div>
           </div>
-          <div class="skills-content">
-            <div id="skills-content-left-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-          </div>
+          <div id="circle-title-left">Sustainability</div>
+          <div id="skills-content-left-bottom">I am a believer in leaving things better than the way I found them.  <strong>Considering future use and maintenance</strong> is of the utmost importance whether it is crafting a code structure, designing a user interface, or packing-out my trash when I camp.  As an apprentice at Fresh Tilled Soil, I hope to learn the best practices in how to make front-end code and designs innovative and sustainable!</div>
         </div>
 
         <div id="skills3">
           <div class="circle">
-            <div id="circle-title-bottom">Design</div>
           </div>
-          <div class="skills-content">
-            <div id="skills-content-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-          </div>
+          <div id="circle-title-bottom">Customer Experience</div>
+          <div id="skills-content-bottom">Have you ever been on a website where time flew by without notice?  I believe this happens because of a perceived <strong>human connection</strong> and <strong>good design.</strong>  Using my design skills an amiable personality I strive to create experiences that make peoples' days just a little bit easier and more enjoyable.  Also, as I grow in technical knowledge of the web, it is a personal goal to <strong>continually foster relationships</strong> with my clients and end users, so as to keep my designs aligned with their needs.  Some would goal describe as 'agile'.</div>
         </div>
 
         <div id="skills4">
-          <div id="s-right" class="circle">
-            <div id="circle-title">Design</div>
-          </div>
-          <div class="skills-content">
-            <div id="skills-content-right-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-          </div>
+          <div class="circle"></div>
+          <div id="circle-title-right-bottom">Building</div>
+          <div id="skills-content-right-bottom">Since my earliest years I have been a <strong>tinkerer</strong>, a builder, just plain <strong>curious</strong> about the way things work.  This <strong>passion for building</strong> remains with me and will be an asset in my pursuit of building amazing user experiences.  Also, if anyone in the office needs a new deck on their house, I might just be your man for the job!</div>
         </div>
 
         <div id="skills5">
-          <div id="s-right" class="circle">
-            <div id="circle-title">Design</div>
-          </div>
-          <div class="skills-content">
-            <div id="skills-content-right-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-          </div>
+          <div class="circle"></div>
+          <div id="circle-title-right-top">Design</div>
+          <div id="skills-content-right-top">I believe that <strong>good design can change the world.</strong>  To achieve this change is not all about skill, but also about how a designer thinks.  A designer must have the ability to combine <strong>empathy</strong> for the context of a problem, <strong>creativity</strong> in the generation of insights and solutions, and <strong>rationality</strong> to analyze and fit solutions to the context.  My training and life experiences have introduced me to these qualities which prepare me well for AUX.</div>
         </div>
       </div>
     </div>
