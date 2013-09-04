@@ -1,5 +1,13 @@
 $(document).ready(function (){
-  $(".skills-button-fixed").click(function() {
+  $("#skills-button-fixed").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#animation-target").offset().top
+      }, 1500);
+  });
+
+  $('#skills-button').hide();
+
+  $("#skills-button").click(function() {
       $('html, body').animate({
           scrollTop: $("#animation-target").offset().top
       }, 1500);
@@ -11,7 +19,6 @@ $(document).ready(function (){
       }, 1500);
   });
 
-  $('.skills-button').hide();
 
   $('#skills-content-left-top').toggle();
   $('#skills-content-left-bottom').toggle();
@@ -48,8 +55,8 @@ $(document).ready(function (){
       $('#skills3').addClass('transition-3');
       $('#skills4').addClass('transition-4');
       $('#skills5').addClass('transition-5');
-      $('.skills-button-fixed').hide();
-      $('.skills-button').show();
+      $('#skills-button-fixed').hide();
+      $('#skills-button').show();
     }
   });
 });

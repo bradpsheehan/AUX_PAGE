@@ -208,14 +208,15 @@ body {
 .hero h1 {
   color: #da662b;
   font-family: 'Carrois Gothic SC', sans-serif;
-  font-size: 6em;
+  font-size: 6.75em;
   font-weight: normal;
   letter-spacing: -0.02em;
-  margin-bottom: -25px;
+  margin-bottom: -20px;
+  margin-top: -20px;
   text-shadow: 2px 2px 0 #fff,6px 6px 0 #e3e3e3;
   text-align: center;
 }
-.hero h4 {
+.hero h3 {
   color: gray;
   font-size: 3em;
   font-family: 'Roboto', sans-serif;
@@ -243,7 +244,7 @@ body {
   margin-top: 15%;
 }
 
-.skills-button-fixed {
+#skills-button-fixed {
   background: url("../images/LOGO_AUX.png");
   cursor: pointer;
   position: fixed;
@@ -259,7 +260,8 @@ body {
   font-size: 2em;*/
 }
 
-.skills-button {
+#skills-button {
+  cursor: pointer;
   margin-top: 3%;
   margin-left: 39%;
   width: 230px;
