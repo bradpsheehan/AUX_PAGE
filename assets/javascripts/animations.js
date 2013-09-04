@@ -2,7 +2,7 @@ $(document).ready(function (){
   $("#skills-button-fixed").click(function() {
       $('html, body').animate({
           scrollTop: $("#animation-target").offset().top
-      }, 1500);
+      }, 1000);
   });
 
   $('#skills-button').hide();
@@ -10,19 +10,19 @@ $(document).ready(function (){
   $("#skills-button").click(function() {
       $('html, body').animate({
           scrollTop: $("#animation-target").offset().top
-      }, 1500);
+      }, 1000);
   });
 
   $("#rec-button").click(function() {
       $('html, body').animate({
           scrollTop: $("#animation-target-2").offset().top
-      }, 1500);
+      }, 1000);
   });
 
   $("#top-button").click(function() {
       $('html, body').animate({
           scrollTop: $("#animation-target-3").offset().top
-      }, 1500);
+      }, 1000);
   });
 
   $('#skills-content-left-top').toggle();
