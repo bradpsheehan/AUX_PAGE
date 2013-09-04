@@ -449,7 +449,7 @@ body {
 
 #rec-button {
   padding-left: 8px;
-  margin-top: 20%;
+  margin-top: 32%;
   margin-left: 85%;
   background: #f68043;
   cursor: pointer;
@@ -478,3 +478,4 @@ body {
   font-family: 'Damion', cursive;
   font-size: 1.7em;
 }
+
