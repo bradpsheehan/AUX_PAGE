@@ -27,7 +27,7 @@ body {
   bottom:20px;
 }
 
-.circle1 {
+#circle1 {
   color: black;
   background: url("../images/bull_horn.png");
   width:70px;
@@ -37,7 +37,7 @@ body {
   border-radius:35px;
 }
 
-.circle2 {
+#circle2 {
   color: black;
   background: url("../images/leaf.png");
   width:70px;
@@ -47,7 +47,7 @@ body {
   border-radius:35px;
 }
 
-.circle3 {
+#circle3 {
   color: black;
   background: url("../images/heart.png");
   width:70px;
@@ -57,7 +57,7 @@ body {
   border-radius:35px;
 }
 
-.circle4 {
+#circle4 {
   color: black;
   background: url("../images/tools.png");
   width:70px;
@@ -67,7 +67,7 @@ body {
   border-radius:35px;
 }
 
-.circle5 {
+#circle5 {
   color: black;
   background: url("../images/drawing_compass.png");
   width:70px;
@@ -77,7 +77,7 @@ body {
   border-radius:35px;
 }
 
-.circle1:hover, .circle2:hover, .circle3:hover, .circle4:hover, .circle5:hover {
+#circle1:hover, #circle2:hover, #circle3:hover, #circle4:hover, #circle5:hover, #rec-button:hover {
   background-color: #da662a;
   cursor: pointer;
   -webkit-transition: all 500ms ease;
@@ -222,11 +222,6 @@ body {
   text-align: center;
 }
 
-.spacer2 {
-  width: 100%;
-  height: 575px;
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -249,12 +244,14 @@ body {
 }
 
 .skills-button-fixed {
+  background: url("../images/LOGO_AUX.png");
+  cursor: pointer;
   position: fixed;
   z-index: 4;
   top: 60%;
   left: 43%;
-  width: 218px;
-  height: 218px;
+  width: 230px;
+  height: 230px;
   border: none;
   /*border-radius: 10px;
   color: white;
@@ -263,17 +260,12 @@ body {
 }
 
 .skills-button {
-  z-index: 4;
-  top: 21%;
-  left: 43%;
-  width: 218px;
-  height: 218px;
+  margin-top: 3%;
+  margin-left: 39%;
+  width: 230px;
+  height: 230px;
   background: url("../images/LOGO_AUX.png");
   border: none;
-  /*border-radius: 10px;
-  color: white;
-  font-family: 'Damion', cursive;
-  font-size: 2em;*/
 }
 
 /*.skills-button:hover {
@@ -388,5 +380,83 @@ body {
   border-radius: 6px;
   padding: 10px;
   font-family: 'Roboto', sans-serif;
+}
 
+.recommendations {
+  margin-top: 400px;
+  width: 100%;
+  height: 575px;
+}
+
+.recommender {
+  float: left;
+  width: 22%;
+  margin-top: 3%
+}
+
+.recommender h3 a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Damion', cursive;
+  font-weight: 400;
+  font-size: 1.6em;
+}
+
+.recommender h3 {
+  margin-bottom: 5px;
+}
+
+#rec1, #rec2, #rec3 {
+  float: left !important;
+  width: 60%;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+}
+
+.rec-photo1, .rec-photo2, .rec-photo3 {
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 99em;
+  border: 3px solid #f68043;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+.rec-photo1 {
+  background: url("../images/jenn_vervier.jpg");
+}
+.rec-photo2 {
+  background: url("../images/cindy-moe.jpg");
+}
+
+.rec-photo3 {
+  background: url("../images/reid_mcknight.jpg");
+}
+
+.rec-container {
+  margin-left: 25%;
+  margin-right: auto;
+  width: 960px;
+  height: 1px;
+  margin-bottom: 18%;
+}
+
+#rec-button {
+  padding-left: 8px;
+  margin-top: 32%;
+  margin-left: 85%;
+  background: #f68043;
+  cursor: pointer;
+  z-index: 4;
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-family: 'Damion', cursive;
+  font-size: 1.7em;
 }
