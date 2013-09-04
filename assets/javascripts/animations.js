@@ -19,6 +19,11 @@ $(document).ready(function (){
       }, 1500);
   });
 
+  $("#top-button").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#animation-target-3").offset().top
+      }, 1500);
+  });
 
   $('#skills-content-left-top').toggle();
   $('#skills-content-left-bottom').toggle();

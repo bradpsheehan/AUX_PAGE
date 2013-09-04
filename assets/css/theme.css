@@ -77,7 +77,7 @@ body {
   border-radius:35px;
 }
 
-#circle1:hover, #circle2:hover, #circle3:hover, #circle4:hover, #circle5:hover, #rec-button:hover {
+#circle1:hover, #circle2:hover, #circle3:hover, #circle4:hover, #circle5:hover, #rec-button:hover, #top-button:hover {
   background-color: #da662a;
   cursor: pointer;
   -webkit-transition: all 500ms ease;
@@ -449,12 +449,28 @@ body {
 
 #rec-button {
   padding-left: 8px;
-  margin-top: 32%;
+  margin-top: 20%;
   margin-left: 85%;
   background: #f68043;
   cursor: pointer;
   z-index: 4;
   width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-family: 'Damion', cursive;
+  font-size: 1.7em;
+}
+
+#top-button {
+  padding-left: 34px;
+  margin-top: 10%;
+  margin-left: 85%;
+  background: #f68043;
+  cursor: pointer;
+  z-index: 4;
+  width: 75px;
   height: 40px;
   border: none;
   border-radius: 4px;
