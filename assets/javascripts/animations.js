@@ -1,8 +1,9 @@
 $(document).ready(function (){
   $(".skills-button-fixed").click(function() {
+      // var duration = Math.abs($(this).scrollTop() - y) * 2; //2ms per pixel moved
       $('html, body').animate({
           scrollTop: $("#animation-target").offset().top
-      }, 700);
+      }, 1500);
   });
 
 
