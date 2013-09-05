@@ -64,4 +64,31 @@ $(document).ready(function (){
       $('#skills-button').show();
     }
   });
+
+  $(document).ready(function() {
+      window.pulse_image = $('#skills-button-fixed');
+      window.pulse_continue_loop = true;
+      PulseAnimation();
+  });
+
+  function PulseAnimation()
+  {
+      var minOpacity = .55;
+      var fadeOutDuration = 1500;
+      var fadeInDuration = 1500;
+
+      window.pulse_image.animate({
+          opacity: minOpacity
+      }, fadeOutDuration, function() {
+          window.pulse_image.animate({
+              opacity: 1
+          }, fadeInDuration, function() {
+              if(window.pulse_continue_loop) {
+                  PulseAnimation();
+              }
+          })
+      });
+  }
+
+
 });
